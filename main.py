@@ -113,7 +113,7 @@ with psycopg2.connect(database="clients_db", user="postgres", password="") as co
 
         def find_client(find_by, current_value):
             """
-            Функция, позволяющая найти клиента по его email (f)
+            Функция, позволяющая найти клиента по его данным: имени, фамилии, email или телефону (f)
             """
             cur.execute("""SELECT * FROM clients c 
                    JOIN data_clients dc ON c.clients_id = dc.clients_id 
