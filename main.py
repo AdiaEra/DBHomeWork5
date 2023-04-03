@@ -1,7 +1,7 @@
 import psycopg2
 from psycopg2 import sql
 
-with psycopg2.connect(database="clients_db", user="postgres", password="Hun$917&305TpS") as conn:
+with psycopg2.connect(database="clients_db", user="postgres", password="") as conn:
     with conn.cursor() as cur:
         # cur.execute("""
         # DROP TABLE data_clients;
